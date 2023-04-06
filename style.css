@@ -1,0 +1,171 @@
+/* Стиль вкладки */
+button{
+  cursor: pointer;
+  background-color:  #333;
+  border-radius: 3px;
+  border: none;
+}
+.tab {
+    overflow: hidden;
+     
+     background-color: #333;
+     display:inline-flex;
+  }
+  
+  /* Стиль кнопок, которые используются для открытия содержимого вкладки */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Изменение цвета фона кнопок при наведении курсора */
+  .tab button:hover {
+    background-color: #bbb9c0;
+  }
+  
+  /* Создание активного/текущего класса связи вкладки */
+  .tab button.active {
+
+    background-color: #fefefe;
+    
+  }
+ 
+  
+  /* Стиль содержимого вкладки */
+  .tabcontent {
+    display: none;
+    border: 0px solid #ccc;
+    border-top: none;
+    
+    
+  
+  
+  }
+  .w {
+    
+    color: rgb(246, 255, 0);
+  }
+  .tablinks{
+    color: rgb(0, 0, 0);
+    background-color: #c7b406;
+    margin: 0 auto;
+    
+    
+  }
+
+  .gp{
+    font-size: 25px;
+  }
+  .op{
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .knopkOdin2 {
+    margin-top: 15px;
+
+    padding-right: 37px;
+    padding-left: 37px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+   
+  }
+
+  .knopkOdin1 {
+
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2);
+  }
+  .knopkOdin{
+    margin-top: 15px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2);
+  }
+
+.box6{
+  padding-top: 20px;
+}
+.routerMio {
+
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.router{
+  background-color: rgb(222, 127, 4);
+  font-size: 35px;
+  cursor: pointer;
+  padding: 30px;
+ 
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.mio{
+  background-color: rgb(222, 127, 4);
+  font-size: 35px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.mio:hover{
+  transform: scale(1.2)
+}
+.router:hover{
+  transform: scale(1.2)
+  
+}
+.podDom{
+  padding-left: 70px;
+  color: aqua;
+  padding-right: 70px;
+}
+
+button.tablinks.active{
+  max-height: 35px;
+}
+
+ a {
+  font-size: 18px;
+ 
+  
+ }
+ 
+
+img{
+  width: 100%;
+}
+
+  .dashBort{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .butt{
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .zametki {
+    margin: 100px 200px;
+  }
+
+  .form-div {
+    /* box-sizing: border-box; */
+    display: flex;
+  }
+
+textarea{
+  font-size: 20px;
+  color: #000;
+  background-color: #5e5959;
+}
+.input{
+  
+  background-color: #5e5959;
+}
+

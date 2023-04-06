@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgb(126, 126, 127);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 150px;
+  max-width: 800px;
+
+}
+
+.container .box {
+  position: relative;
+  margin-bottom: 20px; /* Нижний отступ между элементами аккордеона */
+}
+
+.container .box:last-child {
+  margin-bottom: 0; /* Для последнего элемента нижний отступ убираем */
+}
+
+.container .box .label {
+  position: relative;
+  padding: 20px; /* Внутренний отступ для видимой части */
+  background-color: rgb(12, 12, 15); /* Цвет элемента аккордеона background-color: darkblue;  */
+  color: #fff; /* Цвет шрифта элемента аккордеона */
+  cursor: pointer; /* Меняем курсор при наведении */
+}
+
+.container .box .label::after {
+  content: "+"; /* Задаем иконку "+" для элемента аккордеона */
+  position: absolute;
+  top: 50%; /* Выравнивание по центру */
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container .box.active .label::after {
+  content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
+}
+
+.container .box .content {
+  position: relative;
+  background-color:  #333;/* Цвет фона контента */
+  overflow: hidden;
+  max-height: 0; /* Скрываем контент */
+  transition: 0.3s; /* Для плавности анимации */
+}
+
+.container .box .content p {
+  padding: 70px;
+}
+h1 {
+  text-align: center;
+  padding: 50px;
+}
+.content {
+  line-height: 1.5;
+  
+
+}
+span{
+  color: rgb(6, 175, 51);
+  font-weight: 700;
+  letter-spacing: 1.2px;
+
+}
+
+h6, h3 {
+  color: rgba(211, 90, 4, 0.838);
+  font-size:20px;
+  padding-left: 5px;
+  
+}
+h4 {
+  color: rgba(211, 90, 4, 0.838);
+  font-size:18px;
+  padding-left: 5px;
+  }
+.n{
+  font-size: 20px;
+}
+#username{
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+
+body {
+  
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  background-color:#0e0551;
+}
+.button {
+  position: relative;
+  color: #2196f3;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 4px;
+  padding: 10px 20px;
+  overflow: hidden;
+  transition: 2s;
+  border-radius: 2px;
+
+}
+.button__line {
+  position: absolute;
+  display : block;
+}
+.button__line--top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background:linear-gradient(90deg, transparent,  #2196f3);
+}
+.button:hover .button__line--top {
+  left: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.button__line--button {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background:linear-gradient(270deg, transparent,  #2196f3);
+}
+.button:hover .button__line--button {
+  right:  100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.button__line--left {
+  bottom: -100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background:linear-gradient(0deg, transparent,  #2196f3);
+}
+.button:hover .button__line--left {
+  bottom:   100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+
+  }
+
+  .button__line--right {
+      top:  -100%;
+      right: 0%;
+      width: 2px;
+      height: 100%;
+      background:linear-gradient(180deg, transparent,  #2196f3);
+  }
+  .button:hover .button__line--right {
+      top:    100%;
+      transition: 1s;
+      transition-delay: 5s;
+      }
+      .button:hover {
+          box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 80px #2196f3   ;
+          transition: 1s;
+      }
+      .dostup{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+      }

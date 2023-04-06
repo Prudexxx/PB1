@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html <="en">
+<head>
+  <meta <="UTF-8">
+  <meta <="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css" >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="sxema.css">
+  <link rel="stylesheet" href="calc.css">
+  
+  <title>PBrusnitsyn</title>
+</head>
+<body>   
+  <div class="calculator">
+    <form name="form">
+        <input type="text"  name="result" placeholder="Введите число">
+        <br>
+        <input type="button" value="1" onclick="form.result.value += '1'">
+        <input type="button" value="2" onclick="form.result.value += '2'">
+        <input type="button" value="3" onclick="form.result.value += '3'">
+        <input type="button" value="+" onclick="form.result.value += '+'">
+        <br>
+        <input type="button" value="4" onclick="form.result.value += '4'">
+        <input type="button" value="5" onclick="form.result.value += '5'">
+        <input type="button" value="6" onclick="form.result.value += '6'">
+        <input type="button" value="-" onclick="form.result.value += '-'">
+        <br>
+        <input type="button" value="7" onclick="form.result.value += '7'">
+        <input type="button" value="8" onclick="form.result.value += '8'">
+        <input type="button" value="9" onclick="form.result.value += '9'">
+        <input type="button" value="*" onclick="form.result.value += '*'">
+        <br>
+        <input type="button" value="C" onclick="form.result.value = ''">
+        <input type="button" value="0" onclick="form.result.value += '0'">
+        <input type="button" value="=" onclick="form.result.value = eval(form.result.value)">
+        <input type="button" value="/" onclick="form.result.value += '/'">
+    </form>
+</div>
+  <div class="container">
+    <h1>Помощник продаж <span class="w">lite</span> .</h1>
+    <div class="dashBort">
+      <input value="" autocomplete="off" class="c-input-username" id="username" placeholder="Введите имя клиента" type="text">
+      <a href="http://dcc/Report/Show/30827" target="_blank" id="but"> <button class="butt">Дашборд </button></a>
+    </div>
+        <div class="box">
+          <div class="label">Установление контакта</div>
+          <div class="content">
+            
+            <p>
+               <span>К вам как можно обращаться по имени?</span> <br>
+               <span>Ранее нашими услугами пользовались?</span> <br>
+              <span class="p4">Имя клиента</span><span>, на тот  случай если связь cорвется могу я вам перезвонить на номер с которого звоните?</span>
+              
+       
+            </p>
+          
+          </div>
+        </div>
+    <div class="box">
+      <div class="label">Проверить доступность</div>
+      <div class="content">
+        <p>
+          <span class="p1">Имя клиента</span>, <span> для уточнения технической возможности подключения, а также подобрать вам максимально выгодное предложение, назовите пожалуйста ваш город, улицу, дом и квартиру.
+        </span> <br>
+          <div class="dostup">
+    <!-- 1. <b utton class="knopkOdin1" onclick="window.location.href = 'ttk.html';">Клиент партнера</b> <br> -->
+            <button  class="button" onclick="window.location.href = 'ttk.html';">  
+              <span class="button__line button__line--top"></span>
+              <span class="button__line button__line--right"></span>
+              <span class="button__line button__line--button"></span>
+              <span class="button__line button__line--left"></span>
+            <b>Клиент партнера </b>
+            </button>
+             <!-- Триггер/Открыть модальный -->
+            <!-- <button class="knopkOdin" id="myBtn">Дом не подключен</button> -->
+            <button id="myBtn" class="button" onclick="window.location.href  = 'router.html';">  
+              <span class="button__line button__line--top"></span>
+              <span class="button__line button__line--right"></span>
+              <span class="button__line button__line--button"></span>
+              <span class="button__line button__line--left"></span>
+            <b>Дом не подключен </b>
+            </button>
+          </div>
+    <!-- Модальный -->
+    <div id="myModal" class="modal">
+    
+      <!-- Модальное содержание -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+          <p>&ensp;&ensp;
+            &ensp;&ensp; К сожалению, возможность подключить проводной интернет по вашему адресу отсутствует. Подключение вашего дома к сети в ближайшее время не планируется. Подскажите, пожалуйста, возможно, ваш дом стоит на пересечении двух улиц?
+
+          <span>  Нет</span> - заведи заявку на подключение (договор не создавай, тариф не выбирай), оставь в статусе "Новая", в течение часа она автоматически перейдет в статус Ждет подключения дома.<br><span>Если клиент желает узнать, как подключить дом?</span><br>
+
+         &ensp;&ensp;
+         &ensp;&ensp;Очень приятно, что вы желаете пользоваться нашими услугами домашнего  телевидения. В случае, если от вас и ваших соседей будет подано коллективное заявление в вашу управляющую компанию, то ответственное лицо от управляющей компании сможет обратиться к нам с вопросом о возможности подключения дома.
+        
+        </p>
+      </div>
+    
+    </div>
+    
+
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="label">Выявить потребность</div>
+      <div class="content">
+        <p>
+          
+          <span>Скажите пожалуйста какой тариф выбрали?</span> <br>
+        
+          Выявить потребность (роутер, приставку, смарт тв) все посчитать и узнать сумму и в презентацию. <br>
+
+          
+            <span> Чем чаще  пользуетесь минутами/интернетом/смс/раздача вай фай?</span> <br>
+        </p>
+      </div>
+    </div>
+    
+
+
+    <div class="box">
+      <div class="label">Презентация UP + скидка</div>
+      <div id="sxema" class="content" >
+        <p>
+         
+          <span  class="p">Имя клиента</span>,<span> для вашего номера и для Вас от компании Билайн есть предложение - перейти со своим номером в компанию!
+          </span>
+          
+        </p>  <!-- Ссылки вкладки -->
+<div class="tab">
+  <a style="background-color: blue;" class="tablinks" onclick="openCity(event, 'London')" ><button>Согласен выслушать</button></a>
+  <a style="background-color: rgb(16, 168, 179);"   class="tablinks" onclick="openCity(event, 'Paris')" ><button>Не хочет слушать</button></a>
+  <a style="background-color: rgb(135, 44, 174); "  class="tablinks" onclick="openCity(event, 'Tokyo')" ><button > <b style="color: rgb(24, 206, 4);">2</b> Возражения</button></a>
+
+  <a  class="tablinks" onclick="openCity(event, 'Kitay')"  ><button> Отказ </button></a>
+ 
+
+        </div>
+
+        <!-- Содержимое вкладки -->
+        <div id="Kitay" class="tabcontent">
+          <img src="otkaz.jpeg" center top>
+   
+
+        </div>
+
+
+<div id="London" class="tabcontent">
+  <h3 style="font-size: 15px; color: rgb(131, 131, 131);"> Тариф <span> UP </span> - это тариф конструктор дает возможность вам управлять минутами и гб, и благодаря этому можно управлять ценою. Будут безлимитные мессенджеры. Бесплатный аппер дракон дает возможность подключить безлимитный ю туб и тик ток. К номеру можно будет подключить до  5 номеров Билайн. Также появится возможность установить бесплатное приложение билайн тв в котором можно будет смотреть бесплатно и безлимитно пакет кино и тв2. Ваш личный кабинет появится, где можно отслеживать платежи и списания, а также узнавать о последних новинках и + доступны игры, благодаря которым можно выиграть  реальные призы. 
+    <br>
+    <br>
+    <span> ДИ + ТВ </span> <br>
+      Вы получите возможность пользоваться безлимитным высокоскоростным ДИ и цифровым ТВ.<br>
+      Вам будет доступна скорость  до "Х", это позволит вам с комфортом смотреть фильмы/сериалы в максимальном качестве, скачивать объемные файлы гораздо быстрее. Пакет кино и тв2 открывает возможность смотреть более 200 каналов и так же 5000 фильмов и сериалов будет доступно.
+    </h3>
+  <p>  
+   
+
+
+
+
+  </p>
+</div>
+
+<div id="Paris" class="tabcontent"> 
+  
+    <h4>
+      <span class="p3">Имя клиента</span>, от компании Билайн для Вас предусмотрена персональная  скидка на 2 месяца <span>60%</span> на связь, стоимость получится чуть больше стоимости выбранного Вами тарифа, предлагаю пробовать, протестировать связь Билайн, если не понравится то всегда есть шанс отказаться, пробовать думаю стоит! Можно Ваш телефон перевести в компанию, можно новую сим карту. Скажите как будет удобней?
+    </h4>
+     
+     <p>
+     </p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+
+   <h6 style="font-size: 15px; color: rgb(131, 131, 131);">  
+    <span>Мне нужно посоветоваться?</span> <br>
+    Когда вы хотите решить какой-то вопрос, вы обращаетесь к профессионалу, а не к специалисту
+
+    из другой сферы, верно? В данном случае я являюсь экспертом, и лучше обсудите все вопросы
+    
+    со мной, чтобы не было никаких сомнений. И важно понимать, ваш человек разбирается в этом
+    
+    вопросе? Сможете ли вы объективно принять решение с его помощью? <br>
+    Вы находитесь в таком возрасте, когда с вами должны советоваться, а не вы с кем-то. Тем более,
+
+    уверен, что все прислушиваются именно к вашему мнению.<br>
+    &nbsp;&nbsp; Чем мы можем компенсировать, чтобы вы взяли на себя эту ответственность? (намекаем на скидку).<br>
+    В таком случае, я предлагаю поступить следующим образом: чтобы ваш человек получил полную
+    информацию, и важные детали не потерялись, я предлагаю нам втроем обсудить все
+    оставшиеся вопросы.<br>
+    
+    <span>Дорого!  </span> <br>
+    А с чем сравниваете? <br>
+    "Давайте поделим сумму на количество дней в месяце. Получается, что наш продукт обойдется Вам как дополнительная кружка кофе(или пирожок) в день — разве это много?" <br>
+    <span>У конкурентов дешевле!</span> <br>
+    Вы знаете, честно скажу, да. Но у них есть ряд подводных камней: платное подключение, отсутствие скидок и тд(ремонт кабеля). В итоге общая стоимость получится даже больше. <br>
+    <span>Мне надо подумать!</span> <br>
+  <span class="p0">Имя клиента</span>, я понимаю, что предложение оказалось неожиданным , при этом я  хотел бы помочь Вам принять решение, так как владею полной информацией о тарифе и могу ответить на любые вопросы,если есть сомнения давайте обсудим.<br>
+    Понимаю, важно принять взвешенное решение, и при этом условия только лучше делаем, поэтому предлагаю вместе обсудить вашу выгоду и  увидеть преимущества.<br>
+    Да, конечно. Давайте я вам помогу? О каких еще характеристиках товара вы бы хотели узнать? <br>
+    <span>Мне не нужна вторая сим карта!</span> <br>
+    Вторая сим карта может пригодится к примеру для регистрации новых аккаунтов(вк, одноклассники, авито и тд). <br>
+    Да и к тому же будет возможность протестировать сим карту, и если связь окажется лучше, то можете в любое время перейти со своим номером в компанию.</h6>
+</div>
+        <p>
+         
+
+        </p>
+        
+      </div>
+    </div>
+   
+    <div class="box">
+      <div class="label">Назначь в график</div>
+      <div class="content">
+        
+        <p>
+    
+    
+        1. Подключение бесплатное. <br>
+        2. За час заранее ожидайте звонок от сервис инженера. <br>
+        3. Укладкой кабеля услугу не оказываем. <br>
+        4. Паспорт обязательно! <br>
+        Еще раз все перепроверь.( <span>100р </span>  mnp, <span>100р </span> стоимость сим карты, в финансах будь точен. Про <span class="gp">гп</span>  не забывай).<br>
+        Попращайся с клиентом. <br>
+        <span class="p2">Имя клиента</span>,
+        <span> придет смс с датой и временем на ваш телефон. Радости вам в дом, досвидание!</span>
+          </p>
+      </div>
+         <!-- Роутеры вкладка + работа на мио -->
+<!--          
+  <div class="box">
+          <div class="label">Роутеры и заявки в Мио</div>
+          <div class="content">
+          
+            
+          
+        
+              <div class="routerMio">
+                <button class="router" onclick="window.location.href = 'router.html';">РOУТЕРЫ </button>
+                
+                <button class="mio" onclick="window.location.href = 'mio.html';">Заявки в МИО</button>
+  </div>
+      
+    </div>
+    
+  -->
+  </div>
+  <div class="box">
+    <div class="label">Заказать роутеры  и Обзвон New</div>
+    <div class="content">
+      <p>
+              
+        <div class="routerMio">
+          <!-- <button class="router" onclick="window.location.href = 'router.html';">Заказать роутер </button> -->
+ <button class="button" onclick="window.location.href = 'router.html';">  
+  <span class="button__line button__line--top"></span>
+  <span class="button__line button__line--right"></span>
+  <span class="button__line button__line--button"></span>
+  <span class="button__line button__line--left"></span>
+<b>Заказать роутер </b>
+</button>
+<a href="#" style="" class="button">
+  <span class="button__line button__line--top"></span>
+  <span class="button__line button__line--right"></span>
+  <span class="button__line button__line--button"></span>
+  <span class="button__line button__line--left"></span>
+<b>Обзвон New</b>
+</a>
+          <!-- <button class="mio" onclick="window.location.href = '#';">Обзвон New</button> -->
+        </div>
+
+      </p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="label">Заметки, заявки</div>
+    <div class="content">
+      <div >
+        <form class="y"  action="">
+          <div class="form-div">
+            <textarea rows="7" cols="140" name="message" placeholder="КОМЕНТАРИЙ, ПЕРЕЗВОН" ></textarea>   
+            <input class="input" name="username1" autocomplete="off" placeholder= "СОЗДАННЫЕ ЗАЯВКИ"></input>
+       
+          </div >
+                  
+        </form>
+    </div>
+  <!-- Код для сохранения Local Stor -->
+  <script>
+    let formData = {};
+    const form = document.querySelector('form.y ');
+    const LS = localStorage;
+    //  Получаем данные из инпут
+    form.addEventListener('input', function(event){
+    formData[event.target.name] = event.target.value;
+    LS.setItem('formData', JSON.stringify(formData))
+    })
+
+    // восстановить
+    if(LS.getItem('formData')){
+        formData = JSON.parse(LS.getItem('formData'));
+        console.log(formData)
+        for(let key in formData) {
+            form.elements[key].value = formData[key];
+        }
+        }
+
+
+
+    </script>
+   
+
+ 
+  <script src="app.js"></script>
+  <script src="Up.js"></script>
+
+    <script>
+      let s;
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p1').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+    
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p2').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+              document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p0').textContent = s
+      })
+      })
+
+      
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p3').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+    
+      document.querySelector('body').addEventListener('click',function (){ // делаю кликабельным сайт
+         s = document.querySelector('.c-input-username').value; //получаю имя и в переменную его переназначаю
+        console.log(s)
+       document.querySelector('.p4').textContent = s
+  
+        // document.querySelectorAll('.content.p').innerHTML = '' + s 
+      })
+    
+
+    </script>
+    <script>// Получить модальный
+      var modal = document.getElementById("myModal");
+      
+      // Получить кнопку, которая открывает модальный
+      var btn = document.getElementById("myBtn");
+      
+      // Получить элемент <span>, который закрывает модальный
+      var span = document.getElementsByClassName("close")[0];
+      
+      // Когда пользователь нажимает на кнопку, откройте модальный
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // Когда пользователь нажимает на <span> (x), закройте модальное окно
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // Когда пользователь щелкает в любом месте за пределами модального, закройте его
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }</script>
+    <script src="app.js"></script>
+    <script src="Up.js"></script>
+ 
+</body>
+</html>
